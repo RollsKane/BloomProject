@@ -81,19 +81,21 @@ map BLM05 lookup "BLM_M05"
 {
    levelnum = 5
    next = BLM06
+   secretnext = BLM09   
    sky1 = "YTEXTH63", 0.05
    sky2 = "YTEXTH63", 0.05
    par = 120
    sucktime = 10
    music = "d_ddtblu"
    exitpic = "$IN_E4"
-   enterpic = "$IN_E4"      
+   enterpic = "$IN_E4"  
+   LIGHTNING   
 }
 
 map BLM06 lookup "BLM_M06"
 {
    levelnum = 6
-   //next = BLM07
+   next = BLM07
    sky1 = "YTEXTH63", 0.05
    par = 120
    sucktime = 5
@@ -102,8 +104,8 @@ map BLM06 lookup "BLM_M06"
    exitpic = "$IN_E4"
    enterpic = "$IN_E4"      
 }
-/*
-map BLM07 lookup "BLM_M07"
+
+/*map BLM07 lookup "BLM_M07"
 {
    levelnum = 7
    next = BLM08
@@ -123,8 +125,18 @@ map BLM08 lookup "BLM_M08"
    sucktime = 5
    music = "d_dead"
    LIGHTNING
+}*/
+
+map BLM09 lookup "BLM_M09"
+{
+   levelnum = 9
+   next = BLM06
+   par = 120
+   sucktime = 5
+   music = "life"
+   NoIntermission
 }
-*/
+
 map INT00 lookup "BLM_INT"
 {
    levelnum = 0
